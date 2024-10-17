@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/universal.css" />
+    <link rel="stylesheet" href="assets/css/menu-game.css" />
+    <link rel="stylesheet" href="assets/css/custom-page.css">
+
+    <title>Guitar Pet</title>
+  </head>
+  <body>
+    <!-- <button class="staaaaart">Play song</button> -->
+
+    <!-- <button onclick="mudar()">mudar</button> -->
+
+    <main class="game">
+      <div class="blur"></div>
+
+      <div class="infos">
+        <div>
+          <img src="" alt="personagem" id="personagem" />
+          <div id="points">0000</div>
+        </div>
+      </div>
+
+      <div class="container-game">
+        <header class="diagonal">
+          <div class="wallpaper"></div>
+          <div class="wallpaper2"></div>
+
+          <div class="gerador nota1">
+            <footer class="clicker clicker1"></footer>
+          </div>
+
+          <div class="gerador nota2">
+            <footer class="clicker clicker2"></footer>
+          </div>
+
+          <div class="gerador nota3">
+            <footer class="clicker clicker3"></footer>
+          </div>
+
+          <div class="gerador nota4">
+            <footer class="clicker clicker4"></footer>
+          </div>
+        </header>
+
+        <div class="especial"></div>
+      </div>
+    </main>
+
+    <main class="menu-game">
+      <div class="blur"></div>
+      <div class="container">
+        <header>Guitar pet</header>
+        <main>
+          <div id="play" class="staaaaart" onclick="play()">Jogar</div>
+          <div>Customizar</div>
+        </main>
+      </div>
+    </main>
+
+    <main class="custom-page">
+
+    </main>
+
+    <audio class="audio" controls="controls" id="song" hidden>
+      <source src="assets/audio/505.mp3" type="audio/mp3" />
+    </audio>
+
+    <script type="module" src="assets/js/main.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <!-- type="module" pois nao é possivel importar o arquivo JS sem isso. (nao sei porque ????) -->
+  </body>
+</html>
