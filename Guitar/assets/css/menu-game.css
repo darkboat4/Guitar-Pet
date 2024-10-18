@@ -21,18 +21,24 @@ main.menu-game{
 
 .container header{
     width: 100%;
-    height: auto;
+    height: 10vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    font-size: 6em;
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.219);
+
+   
+    
+}
+
+.container header img{
+    width: 45vw;
+    object-fit: contain;
+    object-position: bottom;   
 }
 
 .container main{
     width: 90%;
-    height: 60%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

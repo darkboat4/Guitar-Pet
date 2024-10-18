@@ -51,6 +51,7 @@ main.game{
     background-color: black;
     filter: opacity(60%);
     z-index: 1;
+    border-radius: 10px;
 }
 
 .game .diagonal{
@@ -117,7 +118,7 @@ div.infos div{
 img#personagem{
     width: 80%;
     height: 75%;
-    background-color: green;
+    background-color: gray;
     object-fit: cover;
     object-position: center;
     transition: .2s linear;

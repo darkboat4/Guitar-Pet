@@ -1,78 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/universal.css" />
-    <link rel="stylesheet" href="assets/css/menu-game.css" />
-    <link rel="stylesheet" href="assets/css/custom-page.css">
 
-    <title>Guitar Pet</title>
-  </head>
-  <body>
-    <!-- <button class="staaaaart">Play song</button> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/universal.css" />
+  <link rel="stylesheet" href="assets/css/menu-game.css" />
+  <link rel="stylesheet" href="assets/css/custom-page.css">
+  <!-- <link rel="icon" href="img/garipersona.png" type="image/x-icon"> -->
 
-    <!-- <button onclick="mudar()">mudar</button> -->
+  <title>Guitar Pet</title>
+</head>
 
-    <main class="game">
-      <div class="blur"></div>
+<body>
+  <!-- <button class="staaaaart">Play song</button> -->
 
-      <div class="infos">
-        <div>
-          <img src="" alt="personagem" id="personagem" />
-          <div id="points">0000</div>
+  <!-- <button onclick="mudar()">mudar</button> -->
+
+  <main class="game">
+    <div class="blur"></div>
+
+    <div class="infos">
+      <div>
+        <img src="" alt="personagem" id="personagem" />
+        <div id="points">0000</div>
+      </div>
+    </div>
+
+    <div class="container-game">
+      <header class="diagonal">
+        <div class="wallpaper"></div>
+        <div class="wallpaper2"></div>
+
+        <div class="gerador nota1">
+          <footer class="clicker clicker1"></footer>
         </div>
+
+        <div class="gerador nota2">
+          <footer class="clicker clicker2"></footer>
+        </div>
+
+        <div class="gerador nota3">
+          <footer class="clicker clicker3"></footer>
+        </div>
+
+        <div class="gerador nota4">
+          <footer class="clicker clicker4"></footer>
+        </div>
+      </header>
+
+      <div class="especial"></div>
+    </div>
+  </main>
+
+  <main class="menu-game">
+    <div class="blur"></div>
+    <div class="container">
+      <header><img src="assets/img/O-CERTO.png" alt="Guitar pet titulo"></header>
+      <main>
+        <div id="play"  onclick="custom()">Jogar</div>
+        <div>Customizar</div>
+      </main>
+    </div>
+  </main>
+
+  <main class="custom-page">
+    <div class="blur"></div>
+
+    <div class="section-personagem section-custom">
+      <h1>Escolha o personagem</h1>
+
+      <div class="carrosel">
+        <input type="radio" name="personagens" id="personagem_1" checked="checked" value="0">
+
+        <label for="personagem_1">
+          <img src="assets/img/personagens/gato-1.png" alt="foto do personagem">
+          <p>Guitar Cat</p>
+        </label>
+
+        <input type="radio" name="personagens" id="personagem_2" value="1">
+
+        <label for="personagem_2">
+          <img src="assets/img/personagens/Caps1.jpg" alt="foto do personagem">
+          <p>Capibara</p>
+        </label>
+
+        <input type="radio" name="personagens" id="personagem_3" value="2">
+
+        <label for="personagem_3">
+          <img src="assets/img/personagens/Hams1.jpg" alt="foto do personagem">
+          <p>Hamster</p>
+        </label>
+
+        
+        <input type="radio" name="personagens" id="personagem_4" value="3">
+
+        <label for="personagem_4">
+          <img src="assets/img/personagens/coe1.jpg" alt="foto do personagem">
+          <p>Cuelho</p>
+        </label>
+
       </div>
+    </div>
 
-      <div class="container-game">
-        <header class="diagonal">
-          <div class="wallpaper"></div>
-          <div class="wallpaper2"></div>
+    <div class="section-musica section-custom">
+      <h1>Escolha a música</h1>
 
-          <div class="gerador nota1">
-            <footer class="clicker clicker1"></footer>
-          </div>
+      <div class="carrosel">
 
-          <div class="gerador nota2">
-            <footer class="clicker clicker2"></footer>
-          </div>
-
-          <div class="gerador nota3">
-            <footer class="clicker clicker3"></footer>
-          </div>
-
-          <div class="gerador nota4">
-            <footer class="clicker clicker4"></footer>
-          </div>
-        </header>
-
-        <div class="especial"></div>
+        <input type="radio" name="musicas" id="musica_1" checked="checked" value="0">
+        <label for="musica_1">
+          <img src="assets/img/hopes-and-dreamns.jpg" alt="foto da musica">
+          <p>Hopes and Dreams</p>
+        </label>
+      
+        <input type="radio" name="musicas" id="musica_2"  value="1">
+        <label for="musica_2">
+          <img src="assets/img/505.jpg" alt="foto da musica">
+          <p>505</p>
+        </label>
       </div>
-    </main>
+      
+    </div>
 
-    <main class="menu-game">
-      <div class="blur"></div>
-      <div class="container">
-        <header>Guitar pet</header>
-        <main>
-          <div id="play" class="staaaaart" onclick="play()">Jogar</div>
-          <div>Customizar</div>
-        </main>
-      </div>
-    </main>
+    <div class="section-cenario section-custom">
+      <h1>Escolha o cenário</h1>
+      <div class="carrosel">
 
-    <main class="custom-page">
+        <input type="radio" name="cenarios" id="cenario_1" checked="checked" value="0">
+        <label for="cenario_1">
+          <img src="assets/img/backgrounds/Cidade.jpeg" alt="foto do cenario">
+          <p>Cidade</p>
+        </label>
 
-    </main>
+        
+      <input type="radio" name="cenarios" id="cenario_2" value="1">
+      <label for="cenario_2">
+        <img src="assets/img/backgrounds/cenario-espaco.jpeg" alt="foto do cenario">
+        <p>Espaço sideral</p>
+      </label>
 
-    <audio class="audio" controls="controls" id="song" hidden>
-      <source src="assets/audio/505.mp3" type="audio/mp3" />
-    </audio>
+      <input type="radio" name="cenarios" id="cenario_3" value="2">
+      <label for="cenario_3">
+        <img src="assets/img/backgrounds/cenario-emos.jpeg" alt="foto do cenario">
+        <p>Banda de rock</p>
+      </label>
 
-    <script type="module" src="assets/js/main.js"></script>
+      <input type="radio" name="cenarios" id="cenario_4" value="3">
+      <label for="cenario_4">
+        <img src="assets/img/backgrounds/Matriux.jpeg" alt="foto do cenario">
+        <p>Matrix</p>
+      </label>
 
-    <script src="assets/js/script.js"></script>
-    <!-- type="module" pois nao é possivel importar o arquivo JS sem isso. (nao sei porque ????) -->
-  </body>
+      <input type="radio" name="cenarios" id="cenario_5" value="4">
+      <label for="cenario_5">
+        <img src="assets/img/backgrounds/fundo-1-new.png" alt="foto do cenario">
+        <p>Cafeteria</p>
+      </label>
+
+    </div>
+
+    </div>
+
+    <div class="play-button staaaaart" onclick="play()">Iniciar Jogo</div>
+
+  </main>
+
+  <audio class="audio" controls="controls" id="song" hidden>
+    <source src="assets/audio/505.mp3" type="audio/mp3" />
+  </audio>
+
+  <script type="module" src="assets/js/main.js"></script>
+
+  <script src="assets/js/script.js"></script>
+  <!-- type="module" pois nao é possivel importar o arquivo JS sem isso. (nao sei porque ????) -->
+</body>
+
 </html>
