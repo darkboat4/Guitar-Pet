@@ -1,6 +1,5 @@
-import Game from "/assets/js/game.js"; 
-import Matriz from "/assets/js/matriz.js";
-
+import Game from "./game.js"; 
+import Matriz from "./matriz.js";
 
 /*
     [1, 0, 0, 0],    [0]
@@ -24,66 +23,246 @@ import Matriz from "/assets/js/matriz.js";
 */
 
 const m = new Matriz;
-m.getIndexOfTime(120) //o parâmetro é a quantidade de tempo, eles vao direto para o ARRAY;
 
 const game = new Game(  
     [
-        m.notes[9],m.notes[10],m.notes[4],m.notes[12], m.notes[11], m.notes[14], 
-        m.notes[13], m.notes[6], m.notes[12], m.notes[5], m.notes[7], m.notes[11], //introdução da musica
-
-        m.notes[14],m.notes[14],m.notes[12],m.notes[10],m.notes[9],
-        m.notes[8],m.notes[4],m.notes[4],m.notes[4],m.notes[12],
-        m.notes[13],m.notes[9],m.notes[9],m.notes[9],m.notes[9],
-        m.notes[9],m.notes[9],m.notes[9],m.notes[9],m.notes[9],
-        m.notes[9],m.notes[9],
-
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[1],
+        m.notes[12],
+        m.notes[13],
+        m.notes[8],
+        m.notes[13],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],    
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[3],
+        m.notes[2],
+        m.notes[1],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
+        m.notes[2],
+        m.notes[3],
+        m.notes[1],
     ], 
     [ 
-         4.1, 7.50, 10.6, 13.9, 17.7, 21.1, 24.6, 28.03, 31.3, 34.9, 38.3, 41.5,  //introduçao da musica
+        10.447,
+        10.665,
+        10.860,
+        10.996,
+        11.183,
+        11.341,
+        11.500,
+        12.228,
+        12.243,
+        12.936,
+        14.247,
+        15.005,
+        15.698,
+        17.023,
+        17.804,
+        18.555,
+        19.528,
+        19.874,
+        20.551,
+        21.259,
+        22.732,
+        23.468,
+        24.109,
+        25.531,
+        26.193,
+        26.871,
+        28.315,
+        29.000,
+        29.817,
+        30.775,
+        31.121,
+        31.769,
+        32.513,
+        34.931,	
+        35.100,	
+        35.461,	
+        35.781,	
+        36.150,	
+        36.340,	
+        36.531,	
+        36.870,	
+        37.211,	
+        37.601,	
+        37.961,	
+        38.301,	
+        38.596,	
+        38.961,	
+        39.337,	
+        39.711,	
+        40.071,	
+        40.431,	
+        40.600,	
+        40.751,	
+        41.085,	
+        41.406,	
+        41.800,	
+        41.971,	
+        42.140,	
+        42.520,	
+        42.856,	
+        43.210,	
+        43.590,	
+        43.946,	
+        44.287,	
+        44.570,	
+        44.955,	
+        45.297,	
+        45.656,	
+        46.001,	
+        46.191,	
+        46.376,	
+        46.725,	
+        47.071,	
+        47.411,	
+        47.600,	
+        47.770,	
+        48.111,	
+        48.461,	
+        48.650,	
+        48.836,	
+        49.180,	
+        49.540,	
+        49.895,	
+        50.246,	
+        50.420,	
+        50.590,	
+        50.946,	
+        51.311,	
+        51.630,	
+        51.830,	
+        52.020,	
+        52.320,	
+        52.680,	
+        53.036,	
+        53.206,	
+        53.376,	
+        53.750,	
+        54.056,	
+        54.486,	
+        54.826,	
+        55.201,	
+        55.521,	
+        55.880,	
+        56.050,	
+        56.276,	
+        56.600
+    ],
 
-      44.9, 48.3, 52.0, 55.2, 58.8,
-      62.2, 65.7, 69.1, 70.8, 72.41, 
-      74.2, 75.8, 77.7, 79.3, 81.0, 
-      82.6, 84.4, 85.4, 86.0, 86.7, 
-      88.0, 89.8, 91.4, 92.2, 93.4, 
-      95.0, 96.1
-
-
-
-    ]
+    'hopes' //AQUI VOCE COLOCA O NOME DA MUSICA, DE ACORDO COMO ELA ESTA ESCRITA NO ARQUVIO
 );
 
 
 const start = () => game.startGame();
-const k = document.querySelector('.staaaaart')
-
-const wallpaper = document.querySelector('.wallpaper');
-const wallpaper2 = document.querySelector('.wallpaper2');
-
+const k = document.querySelector('.staaaaart');
+let count = 0;
 
 k.addEventListener('click', () => {
     game.audio.play(); 
     start();
     k.style.display = 'none'; 
-    wallpaper.style.animationName = 'queda';
-    wallpaper2.style.animationName = 'queda2';  
 })
 
 document.addEventListener('keypress', (e)=>{
+    count++;
+
     let el = e.keyCode;
-    if(el == 32 || el == 13){ 
+    if((el == 32 || el == 13) && count === 1){ 
         game.audio.play(); 
         start();
     k.style.display = 'none'; 
-    
-    wallpaper.style.animationName = 'queda';
-    wallpaper2.style.animationName = 'queda2'; 
     }
 })
-
-//MUSICAS SUGESTOES
-/*
-    505,
-    CRAZY TRAIN,
-    BRING ME TO LIFE,
-*/
