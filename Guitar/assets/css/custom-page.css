@@ -1,6 +1,6 @@
 main.custom-page{
-    width: 50vw;
-    height: 95vh;
+    width: 60%;
+    height: 95%;
     border: 1px solid black;
     backdrop-filter: brightness(10px);
     border: 1px solid;
@@ -10,7 +10,19 @@ main.custom-page{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: px;
+    overflow: hidden;
+    margin: 10px;
+    background-image: url();
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main.custom-page .section-custom h1{
+    background-color: red;
+    margin: 0;
+    padding: 0;
 }
 
 main.custom-page .section-custom{
@@ -31,15 +43,43 @@ main.custom-page .section-custom{
 main.custom-page .section-custom .carrosel{
     
     width: 90%;
-    height: 80%;
+    height: 200px;
+
+    position: relative;
+    
     
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
 
-    overflow-x: auto;
+    
+    overflow-x: scroll;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    
+    /* background-color: red; */
+
+
+}
+
+/* main.custom-page .section-custom .carrosel:hover{ */
+    /* width: 100px; */
+/* } */
+
+.carrosel::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+
+.carrosel::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.carrosel::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
 
 }
 
@@ -61,28 +101,34 @@ main.custom-page .section-custom .carrosel{
 }
 
 .carrosel label{
-    width: 9vw;
-    height: 10vw;
-
+    min-width: 120px;
+    max-width: 120px;
+    height: 150px;
+    margin: 0px 20px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     
     border: 1px solid white;
     border-radius: 10px;
+
+
+    
 }
 
-.carrosel label img{
-    width: 100%;
-    height: 9vw;
-    object-fit: cover;
+.carrosel label img{  
+    width: 100%; /* ocupa toda a largura do label */
+    height: auto; /* mantém a proporção da imagem */
+    object-fit: contain; /* cobre o espaço disponível */
     border-radius: 10px 10px 0px 0px;
+
+
 }
 
 .carrosel label p{
-    font-size: 1.5em;
+    font-size: 1em;
     width: auto;
     text-align: center;
     height: auto;
@@ -100,7 +146,12 @@ main.custom-page .section-custom .carrosel{
     border-radius: 10px;
     font-size: 1.5em;
 
-    z-index: 3;
+    position: absolute;
+    left: 76%;
+    top: 85%;
+    
+
+    z-index: 4;
     
     transition: .2s ease;
 

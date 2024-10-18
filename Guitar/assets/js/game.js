@@ -1,35 +1,42 @@
 export default class Game {
     constructor(matriz, time, music){
-        this.game  = document.querySelector('.game')
+        this.game = document.querySelector('.game');
         this.gerador = document.querySelectorAll('.gerador');
         this.pointsHTML = document.querySelector('#points');
         this.clickers = document.querySelectorAll('.clicker');
         this.partituras = document.querySelectorAll('.partitura');
-        this.audio = document.querySelector('#song')
-        this.points = 0;
+        this.audio = document.querySelector('#song');
         this.sheetGreen = null;
         this.sheetRed = null;
         this.sheetYellow = null;
         this.sheetBlue = null;
+        this.points = 0;
         this.count = 0;
         this.matriz = matriz;
         this.time = time;
+        this.music = music;
     }  
     
     startGame(){
-        this.sequenceNotes();
+        this.choiceMusic(this.music);
+        this.sequenceNotes(this.matriz);
         this.detectedTouch();
         this.analyzeSheets();
     } 
     
-    choiceMusic(){
-
+    choiceMusic(music){
+        const sourc = document.createElement('source');
+        [['src', `./assets/audio/${music}.mp3`], ['type', 'audio/mp3']].forEach(([key, value]) => sourc.setAttribute(key, value));
+        this.audio.appendChild(sourc);
+        
+        // sourc.setAttribute('src', `./assets/audio/${music}.mp3`);
+        // sourc.setAttribute('type', 'audio/mp3');
     }
     
-    sequenceNotes(){
-        for(let i in this.matriz){       
+    sequenceNotes(matriz){
+        for(let i in matriz){       
             //o 1º parametro é o tempo que as notas vao surgir (EM SEGUNDOS). 0 2º é o índice da matriz que vai ser tocado
-            this.timeoutSheet(this.time[i] - 0.90, this.matriz[i]); 
+            this.timeoutSheet(this.time[i] - 0.80, matriz[i]); 
         }
     }
 
@@ -69,14 +76,14 @@ export default class Game {
         clicker.setAttribute('id', 'active');
 
         if(sheetColor[0]){
-            if(sheetColor[0].style.top >= '82%' && sheetColor[0].style.top <= '95%'){
+            if(sheetColor[0].style.top >= '80%' && sheetColor[0].style.top <= '95%'){
                 sheetColor[0].removeAttribute('class');
-                this.points += 500;
-                mudar_persona();
+                this.points += 100;
+                mudar_persona()
             }
 
-            if(sheetColor[0].style.top < '81%'){
-                this.points -= 100;
+            if(sheetColor[0].style.top < '70%'){
+                this.points = 30;
             }
         }
     }
@@ -88,7 +95,8 @@ export default class Game {
             for(let i of this.partituras){
                 if(i.style.top == '100%'){
                     i.parentNode.removeChild(i), //DELETA AQUI
-                    this.points -= 500; //tira os pontos
+                    this.points -= 70; //tira os pontos
+                    gato_triste()
                 }
             }
 
@@ -140,7 +148,6 @@ export default class Game {
     }
 
     gravity(partitura){ 
-        // this.intervalgravity(partitura, 6, false) // 1º parametro é a partitura gerada. 2º é a velocidade que as partituras caem. 3º é necessario ser 'true' caso voce vá executar essa funçao novamente.
         this.intervalgravity(partitura, 10, false)
         //MODIFIQUE A GRAVIDADE AQUI...
     }

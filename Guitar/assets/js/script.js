@@ -5,13 +5,14 @@ const backgrounds = [
     "img/backgrounds/cenario-emos.jpeg",
     "img/backgrounds/Matriux.jpeg",
     "img/backgrounds/fundo-1-new.png",
-    "img/backgrounds/fundo-3.jpg"
+    "img/backgrounds/elden-ring-cenario.png"
 ];
 
 const gato = [
     "img/personagens/gato-1.png",
     "img/personagens/gato-2.png",
-    "img/personagens/gato-3.png"
+    "img/personagens/gato-3.png",
+    "img/personagens/gato-4.png"
 
 ];
 
@@ -51,8 +52,10 @@ var body = document.querySelector('body');
 var main = document.querySelector('main');
 
 var div_game = document.querySelector('.game');
-var div_menu_game = document.querySelector('.menu-game')
-var div_custom_page = document.querySelector('.custom-page')
+var div_menu_game = document.querySelector('.menu-game');
+var div_custom_page = document.querySelector('.custom-page');
+var button_play = document.querySelector('.play-button');
+var div_tutorial = document.querySelector('.tutorial');
 
 var persona_value = document.getElementsByName("personagens");
 var musica_value = document.getElementsByName("musicas");
@@ -67,6 +70,7 @@ main.style.backgroundImage = "url(assets/" + backgrounds[0] + ")";
 div_menu_game.style.backgroundImage = "url(assets/" + backgrounds[0] + ")";
 div_custom_page.style.backgroundImage = "url(assets/" + backgrounds[0] + ")";
 
+
 var contador = 0;
 
 var cont2 = 0;
@@ -75,6 +79,7 @@ var cont2 = 0;
 function custom(){
     div_menu_game.style = "display:none"
     div_custom_page.style = "display:flex"
+    button_play.style = "display:flex"
 }
 
 
@@ -106,20 +111,26 @@ function play(){
 
     img_personagem.src = "assets/" + personagens[personagem_selected][0];
 
+    var selectedBackground = backgrounds[cenario_selected];
     
-    body.style.backgroundImage = "url(assets/" + backgrounds[cenario_selected] + ")";
-    main.style.backgroundImage = "url(assets/" + backgrounds[cenario_selected] + ")";
-    div_menu_game.style.backgroundImage = "url(assets/" + backgrounds[cenario_selected] + ")";
-    div_custom_page.style.backgroundImage = "url(assets/" + backgrounds[cenario_selected] + ")";
+    body.style.backgroundImage = `url(assets/${selectedBackground})`;
+    main.style.backgroundImage = `url(assets/${selectedBackground})`;
+    div_menu_game.style.backgroundImage = `url(assets/${selectedBackground})`;
+    div_custom_page.style.backgroundImage = `url(assets/${selectedBackground})`;
+    div_game.style.backgroundImage = `url(assets/${selectedBackground})`;
 
 
     div_menu_game.style = "display:none"
     div_custom_page.style = "display:none"
     div_game.style = "display:flex"
+
+    button_play.style = "display:none"
 }
 
-div_custom_page.style = "display:none;"
+div_custom_page.style = "display:none"
 div_game.style = "display:none"
+button_play.style = "display:none"
+div_tutorial.style = "display:none"
 // div_menu_game.style = "display:none"
 
 
@@ -141,6 +152,30 @@ function mudar_persona(){
         cont2 = 0;
     }
 
+    if(personagem_selected == 0 && cont2 > 2){
+        cont2 = 0;
+    }
+
     img_personagem.src = "assets/" + personagens[personagem_selected][cont2];
+
+
 }
 
+function gato_triste(){
+    if(personagem_selected == 0){
+        img_personagem.src = "assets/" + personagens[personagem_selected][3];
+    }
+}
+
+function abrir_tutorial(){
+
+    
+    div_menu_game.style = "display:none"
+    div_tutorial.style = "display:flex"   
+}
+
+function fechar_tutorial(){
+        
+    div_menu_game.style = "display:flex"
+    div_tutorial.style = "display:none"   
+}
