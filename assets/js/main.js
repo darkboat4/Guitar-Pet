@@ -28,14 +28,14 @@ const hamster = [
     "img/personagens/Hams1.png",
     "img/personagens/hams2.png",
     "img/personagens/hams3.png",
-    "img/personagens/Hams-4.png"
+    "img/personagens/Hams4.png"
 ];
 
 const coelho = [
     "img/personagens/coe1.png",
     "img/personagens/Coe2.png",
     "img/personagens/coe3.png",
-    "img/personagens/Cu-4.png"
+    "img/personagens/coe4.png"
 ];
 
 const arrCharact = [

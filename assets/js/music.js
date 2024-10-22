@@ -89,6 +89,33 @@ const FiveOFive = new Game(
         m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
         m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
 
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
+
+        
+        m.notes[0], m.notes[3], m.notes[2], m.notes[1], 
+        m.notes[0], m.notes[3], m.notes[2], m.notes[1], 
+        m.notes[0], m.notes[3], m.notes[2], m.notes[1], 
+        
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
+        m.notes[3], m.notes[2], m.notes[0], m.notes[1], 
+
+        
+        m.notes[1], m.notes[2], m.notes[3], m.notes[2], 
+        m.notes[1], m.notes[2], m.notes[3], m.notes[2], 
+        m.notes[1], m.notes[2], m.notes[3], m.notes[2], 
+        m.notes[1], m.notes[2], m.notes[3], m.notes[2], 
+
+        /////fim da musica
+
+        m.notes[15] 
+
+        
+
+    
+
 
         
 
@@ -573,60 +600,90 @@ const MasterOfPuppets = new Game(
 
 const SerenataExistencialista = new Game(
     [
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[1], m.notes[2], m.notes[1],
-        m.notes[8], m.notes[1], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[3], m.notes[2], m.notes[1],
-        m.notes[1], m.notes[2], m.notes[3], m.notes[1], m.notes[2],
-        m.notes[3], m.notes[1], m.notes[2], m.notes[3], m.notes[1],
-        m.notes[2], m.notes[3], m.notes[1], m.notes[2], m.notes[3],
-        m.notes[1], m.notes[2], m.notes[3], m.notes[1], m.notes[2],
-        m.notes[3], m.notes[1], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[1], m.notes[3], m.notes[2], m.notes[1],
-        m.notes[3], m.notes[1], m.notes[3], m.notes[2], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[1],
-        m.notes[2], m.notes[1], m.notes[8], m.notes[1], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[1], m.notes[3], m.notes[2], m.notes[1],
-        m.notes[3], m.notes[1], m.notes[3], m.notes[2], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[1], m.notes[2], m.notes[3],
-        m.notes[1], m.notes[2], m.notes[3], m.notes[1], m.notes[2],
-        m.notes[3], m.notes[1], m.notes[2], m.notes[3], m.notes[1],
-        m.notes[2], m.notes[3], m.notes[1], m.notes[2], m.notes[3],
-        m.notes[1], m.notes[2], m.notes[3], m.notes[1], m.notes[3],
-        m.notes[1], m.notes[2], m.notes[3], m.notes[1], m.notes[3],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[1],
-        m.notes[3], m.notes[2], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[2], m.notes[1], m.notes[3],
-        m.notes[2], m.notes[1], m.notes[1], m.notes[2], m.notes[1],
-        m.notes[8], m.notes[1], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3], m.notes[1], m.notes[3], m.notes[2],
-        m.notes[1], m.notes[3],
+        
+        m.notes[2], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[1],
+        m.notes[1], m.notes[3], m.notes[2], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[1],
+        
+        m.notes[3], m.notes[2], m.notes[1], m.notes[3],
+        m.notes[1], m.notes[3], m.notes[2], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[3],
+        m.notes[1], m.notes[3], m.notes[2], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[3],
+        m.notes[2], m.notes[1], m.notes[3], m.notes[2],
+        m.notes[1], m.notes[1], m.notes[0], m.notes[3],
+        m.notes[8], m.notes[0], m.notes[1], m.notes[3],
+        m.notes[2], m.notes[1], m.notes[3], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[3],
+        m.notes[2], m.notes[1], m.notes[1], m.notes[3],
+        m.notes[2], m.notes[1], m.notes[3], m.notes[1],
+        m.notes[3], m.notes[2], m.notes[1], m.notes[3],
+        m.notes[2], m.notes[1], m.notes[3], m.notes[2],
+        m.notes[1], m.notes[3], m.notes[2], m.notes[1],
+        m.notes[0], m.notes[2], m.notes[1], m.notes[1],
+        m.notes[2], m.notes[0], m.notes[1], m.notes[2],
+        m.notes[0], m.notes[1], m.notes[2], m.notes[3],
+        m.notes[1], m.notes[2], m.notes[3], m.notes[1],
+        m.notes[2], m.notes[3], m.notes[1], m.notes[2],
+        
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+
+
+        m.notes[3], m.notes[11], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+       
+       
+       
+        m.notes[11], m.notes[11], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[6], m.notes[6], m.notes[1], m.notes[1],
+
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[4], m.notes[5], m.notes[5], m.notes[0], 
+        
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[6], m.notes[6], m.notes[1], m.notes[1],
+
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[4], m.notes[5], m.notes[5], m.notes[0], 
+        
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[6], m.notes[6], m.notes[1], m.notes[1], 
+        
+        m.notes[2], m.notes[2], m.notes[3], m.notes[1], 
+        m.notes[4], m.notes[5], m.notes[5], m.notes[0], 
+        
+        
+        m.notes[0], 
+        m.notes[11],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[2],
+        m.notes[3], m.notes[1], m.notes[2], m.notes[1],
+        m.notes[0], m.notes[0], m.notes[1], m.notes[0],
+        m.notes[0], m.notes[1], m.notes[0], m.notes[0],
+        m.notes[5], m.notes[5], m.notes[6], m.notes[6],
+        m.notes[5], m.notes[1], m.notes[0], m.notes[0],
     ],
     [
-        84.545,84.825,94.320,94.170,93.740,93.210,92.630,92.360,92.180,91.690,91.050,90.480,90.219,89.970,89.840,89.406,88.840,88.260,87.960,87.746,87.600,87.239,86.655,86.100,85.830,85.590,85.440,85.076,84.515,83.990,83.720,83.480,83.330,82.900,82.350,81.800,81.540,81.325,81.160,80.710,80.185,79.660,79.380,79.126,78.980,78.585,78.020,77.720,77.476,77.210,76.970,76.800,76.400,75.890,75.350,75.066,74.820,74.650,74.240,74.090,73.710,71.546,71.240,71.000,70.600,70.165,69.796,69.400,68.850,68.040,67.306,66.820,65.936,65.070,64.540,63.680,62.906,62.360,61.810,61.550,61.305,60.800,60.515,60.360,60.120,59.950,59.690,59.435,59.140,58.596,58.350,58.200,57.970,57.840,57.575,57.315,57.090,56.470,56.200,56.050,55.790,55.355,54.845,54.319,53.995,53.739,53.510,53.340,53.156,52.680,52.160,51.890,51.610,51.330,51.160,50.966,50.540,50.006,49.480,49.195,48.980,48.856,48.405,47.850,47.315,47.000,46.770,46.615,46.210,45.660,45.100,44.820,44.590,44.440,44.026,43.495,42.950,42.650,42.390,42.270,41.856,41.296,40.790,40.540,40.300,40.145,39.695,39.165,38.620,38.340,38.080,37.960,37.530,36.929,36.040,35.910,35.180,34.580,34.196,33.800,33.240,32.675,32.410,32.145,31.919,31.770,31.600,30.846,30.230,29.850,29.455,28.910,28.380,28.080,27.860,27.630,27.480,27.250,26.705,25.920,25.495,25.125,24.595,24.020,23.785,23.530,23.390,23.240,22.920,22.210,21.640,21.225,20.820,20.250,19.706,19.435,19.155,18.985,18.780,18.595,18.050,17.280,16.880,15.940,15.376,15.110,14.830,14.620,14.470,14.280,14.000,13.460,12.946,12.550,12.155,11.650,11.070,10.870,10.720,10.550,10.380,10.226,10.061,9.946,9.696,9.360,8.590,8.206,7.801,7.310,6.671,6.500,6.350,6.221,6.071,5.921,5.786,5.631,5.350,4.806,4.296,3.880,3.471,2.976,2.400,1.891,1.716,1.570,1.400,1.270,1.100,0.971,0.831,0.680,0.530,0.400,0.250,
+        84.545,84.825,94.320,94.170,93.740,93.210,92.630,92.360,92.180,91.690,91.050,90.480,90.219,89.970,89.840,89.406,88.840,88.260,87.960,87.746,87.600,87.239,86.655,86.100,85.830,85.590,85.440,85.076,84.515,83.990,83.720,83.480,83.330,82.900,82.350,81.800,81.540,81.325,81.160,80.710,80.185,79.660,79.380,79.126,78.980,78.585,78.020,77.720,77.476,77.210,76.970,76.800,76.400,75.890,75.350,75.066,74.820,74.650,74.240,74.090,73.710,71.546,71.240,71.000,70.600,70.165,69.796,69.400,68.850,68.040,67.306,66.820,65.936,65.070,64.540,63.680,62.906,62.360,61.810,61.550,61.305,60.800,60.515,60.360,60.120,59.950,59.690,59.435,59.140,58.596,58.350,58.200,57.970,57.840,57.575,57.315,57.090,56.470,56.200,56.050,55.790,55.355,54.845,54.319,53.995,53.739,53.510,53.340,53.156,52.680,52.160,51.890,51.610,51.330,51.160,50.966,50.540,50.006,49.480,49.195,48.980,48.856,48.405,47.850,47.315,47.000,46.770,46.615,46.210,45.660,45.100,44.820,44.590,44.440,44.026,43.495,42.950,42.650,42.390,42.270,41.856,41.296,40.790,40.540,40.300,40.145,39.695,39.165,38.620,38.340,38.080,37.960,37.530,36.929,36.040,35.910,35.180,34.580,34.196,33.800,33.240,32.675,32.410,32.145,31.919,31.770,31.600,30.846,30.230,29.850,29.455,28.910,28.380,28.080,27.860,27.630,27.480,27.250,26.705,25.920,25.495,25.125,24.595,24.020,23.785,23.530,23.390,23.240,22.920,22.210,21.640,21.225,20.820,20.250,19.706,19.435,19.155,18.985,18.780,18.595,18.050,17.280,16.880,15.940,15.376,15.110,14.830,14.620,14.470,14.280,14.000,13.460,12.946,12.550,12.155,11.650,11.070,10.870,10.720,10.550,10.380,10.226,10.061,9.946,9.696,9.360,8.590,8.206,7.801,7.310,6.671,6.500,6.350,6.221,6.071,5.921,5.786,5.631,5.350,4.806,4.296,3.880,3.471,2.976,2.400,1.891,1.716,1.570,
+
     ],
 
     'SerenataExistencialista'
