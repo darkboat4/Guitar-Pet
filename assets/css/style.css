@@ -228,24 +228,37 @@ img#personagem{
     z-index: 2px;
 
     border-radius: 10px;
+
+    
+    box-shadow: 0px 0px 5px 4px rgb(144, 143, 143);
 }
 
 .green, .clicker1{
     background-color: #255916;
     width: 60px;
     height: 60px;
+
 }
 
 .red, .clicker2{
     background-color: #D92332;
+    
+    width: 60px;
+    height: 60px;
 }
 
 .yellow, .clicker3{
     background-color: #F2BB16;
+    
+    width: 60px;
+    height: 60px;
 }
 
 .blue, .clicker4{
     background-color: #3470BF;
+    
+    width: 60px;
+    height: 60px;
 }
 
 #active{

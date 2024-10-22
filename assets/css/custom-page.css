@@ -120,12 +120,13 @@ main.custom-page .section-custom .carrosel{
 
 .carrosel label img{  
     width: 100%; /* ocupa toda a largura do label */
-    height: auto; /* mantém a proporção da imagem */
-    object-fit: contain; /* cobre o espaço disponível */
+    height: 80%; /* mantém a proporção da imagem */
+    object-fit: cover; /* cobre o espaço disponível */
     border-radius: 10px 10px 0px 0px;
 
 
 }
+
 
 .carrosel label p{
     font-size: 1em;
