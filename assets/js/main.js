@@ -28,7 +28,7 @@ const hamster = [
     "img/personagens/Hams1.png",
     "img/personagens/hams2.png",
     "img/personagens/hams3.png",
-    "img/personagens/Hams4.png"
+    "img/personagens/Hams-4.png"
 ];
 
 const coelho = [
